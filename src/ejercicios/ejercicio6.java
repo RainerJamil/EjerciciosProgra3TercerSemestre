@@ -1,7 +1,6 @@
 package ejercicios;
 
 import java.util.Scanner;
-
 public class ejercicio6 {
     public static void main(String[] args) {
         Scanner leer=new Scanner(System.in);
@@ -11,12 +10,11 @@ public class ejercicio6 {
         R= leer.nextFloat();
         System.out.println("INGRESE LA HIPOTENUSA DEL TRIANGULO");
         H= leer.nextFloat();
-        System.out.println("INGRESE EL CATETO FALTANTE");
-        C= leer.nextFloat();
 
-        AT=(B*(A-C))/2;
-        AR=C*B;
-        Area=AT+AR;
+        C= (float) Math.sqrt(Math.pow(H,2)-Math.pow(R,2));
+        AT=(2*R*C)/2;
+        AC=(PI*R*R)/2;
+        Area=AT+AC;
         System.out.println("EL AREA TOTAL ES: "+Area);
 
     }
