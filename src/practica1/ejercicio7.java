@@ -1,4 +1,4 @@
-package ejercicios;
+package practica1;
 
 import java.util.Scanner;
 
